@@ -1,0 +1,25 @@
+﻿기능모듈ID,기능모듈,요구사항ID,기능 요구사항,단계,우선순위,대표화면,의존요구사항,인수시나리오,구현상태
+PW-M01,공간 생성·테일러링,PW-01,승인 템플릿 버전으로 프로젝트 생성,P1,Must,PW-UI01,,PW-AT01,정의 단계
+PW-M01,공간 생성·테일러링,PW-02,프로젝트 범위·역할·자산 테일러링,P1,Must,PW-UI02,PW-01,PW-AT01,정의 단계
+PW-M02,프로세스 규칙 정의·검증,PW-03,동적 규칙 검토 상태·근거 관리,P1,Must,PW-UI02,PW-01,PW-AT01 PW-AT05,정의 단계
+PW-M03,Vault·콘텐츠·수입,PW-04,구조화된 Vault·자산 관계 관리,P1,Must,PW-UI04,PW-01,PW-AT02,정의 단계
+PW-M03,Vault·콘텐츠·수입,PW-05,원본 파일 수입과 콘텐츠 매핑,P1,Must,PW-UI04,PW-04,PW-AT03,정의 단계
+PW-M04,대화·Harness·실행,PW-06,프로젝트 대화·맥락 선택,P1,Must,PW-UI03,PW-04,PW-AT02 PW-AT03,정의 단계
+PW-M03,Vault·콘텐츠·수입,PW-07,선택 항목 직접·AI 정밀 편집,P1,Must,PW-UI04,PW-04 PW-06,PW-AT03 PW-AT04,정의 단계
+PW-M04,대화·Harness·실행,PW-08,업무 Harness 구성·평가·활성화,P1,Must,PW-UI03,PW-02 PW-03,PW-AT08 PW-AT10 PW-AT13,정의 단계
+PW-M04,대화·Harness·실행,PW-09,실행 상태·중단·재개,P1,Must,PW-UI03,PW-06 PW-08,PW-AT07 PW-AT08,정의 단계
+PW-M02,프로세스 규칙 정의·검증,PW-10,필드·관계·상태 규칙 집행,P1,Must,PW-UI06,PW-03 PW-04,PW-AT05,정의 단계
+PW-M02,프로세스 규칙 정의·검증,PW-11,규칙 정의 오류·충돌 검증,P1,Must,PW-UI02,PW-03,PW-AT05,정의 단계
+PW-M05,검토·승인·접근,PW-12,승인 요청·반려·버전 이력,P1,Must,PW-UI05,PW-07 PW-10,PW-AT05 PW-AT09 PW-AT14,정의 단계
+PW-M06,이벤트·영향·보완,PW-13,이벤트 처리·중복 방지·재시도,P1,Must,PW-UI06,PW-04,PW-AT06 PW-AT08,정의 단계
+PW-M06,이벤트·영향·보완,PW-14,변경 영향·후속 보완 업무,P1,Must,PW-UI06,PW-04 PW-10 PW-13,PW-AT06 PW-AT09,정의 단계
+PW-M07,기준선·증적·환류,PW-15,기준선·기본 내보내기·복구,P1,Must,PW-UI07,PW-04 PW-12,PW-AT11,정의 단계
+PW-M05,검토·승인·접근,PW-16,현장 다중 사용자·권한·격리,P2,Must,PW-UI08,PW-04 PW-06,PW-AT02 PW-AT14,정의 단계
+PW-M03,Vault·콘텐츠·수입,PW-17,동시 편집·승인 경쟁 처리,P2,Must,PW-UI04,PW-07 PW-12,PW-AT04 PW-AT14,정의 단계
+PW-M02,프로세스 규칙 정의·검증,PW-18,병렬 검토·기한·예외 승인,P2,Must,PW-UI05,PW-10 PW-12 PW-13,PW-AT09 PW-AT15,정의 단계
+PW-M01,공간 생성·테일러링,PW-19,템플릿·Harness 갱신·데이터 이전,P2,Must,PW-UI08,PW-08 PW-14 PW-15,PW-AT10,정의 단계
+PW-M07,기준선·증적·환류,PW-20,증적 패키지·보고용 출력,P2,Must,PW-UI07,PW-05 PW-15,PW-AT11,정의 단계
+PW-M07,기준선·증적·환류,PW-21,조직 자산·Harness 개선 환류,P2,Must,PW-UI08,PW-14 PW-15,PW-AT12,정의 단계
+PW-M08,ALM 배포·동기화,PW-22,ALM 구성안 생성·실제 배포,P3,Must,PW-UI08,PW-02 PW-08 PW-10 PW-12,PW-AT07 PW-AT16,정의 단계
+PW-M08,ALM 배포·동기화,PW-23,ALM 왕복 연동·구성 차이 탐지,P3,Must,PW-UI08,PW-13 PW-14 PW-22,PW-AT07 PW-AT16,정의 단계
+PW-M08,ALM 배포·동기화,PW-24,추가 ALM·복합 흐름 확장,P3,Must,PW-UI08,PW-18 PW-22 PW-23,PW-AT16,정의 단계

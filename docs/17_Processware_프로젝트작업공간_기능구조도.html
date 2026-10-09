@@ -1,0 +1,90 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>프로젝트 작업 공간 기능 구조도</title><style>
+:root{--ink:#193044;--muted:#617589;--accent:#087d82;--line:#dce5ec}*{box-sizing:border-box}body{margin:0;background:#eff4f7;color:var(--ink);font:15px/1.85 "Malgun Gothic",system-ui,sans-serif}a{color:#08747e;text-underline-offset:3px}aside{position:fixed;inset:0 auto 0 0;width:280px;background:#142c3c;color:#fff;padding:25px 20px;overflow:auto}aside b{font-size:25px}aside p{font-size:12px;color:#b9ced9}aside a{display:block;color:#d0e2eb;text-decoration:none;padding:6px 8px;font-size:12px;border-radius:5px}aside a:hover{background:#294c60}aside .h1{font-weight:bold;font-size:14px;margin-top:12px}main{margin-left:280px;padding:30px;max-width:1540px}.hero{padding:30px;background:#142c3c;color:white;border-radius:12px}.hero h1{font-size:30px;line-height:1.5}.hero p{color:#cee0ea}.actions{display:flex;gap:9px;flex-wrap:wrap}.actions a,.actions button{background:white;border:0;border-radius:5px;padding:8px 12px;color:#164357;font:inherit;font-size:13px;text-decoration:none;cursor:pointer}article{background:white;border:1px solid var(--line);padding:32px;border-radius:12px;margin-top:24px}h1{font-size:28px;line-height:1.5}h2{scroll-margin-top:20px;margin:38px 0 15px;font-size:23px}h3{font-size:18px;color:#087d82;margin:28px 0 12px}table{width:100%;border-collapse:collapse;font-size:12px;margin:20px 0}th,td{border:1px solid var(--line);padding:9px;vertical-align:top;text-align:left;overflow-wrap:anywhere}th{background:#eaf1f5}tr:nth-child(even){background:#f8fafb}blockquote{border-left:4px solid var(--accent);background:#edf7f6;margin:18px 0;padding:8px 18px}li{margin:7px 0}pre{background:#142c3c;color:#deebf2;padding:20px;border-radius:8px;overflow:auto;font:12px/1.7 Consolas,monospace}code{font:12px Consolas,monospace}.docmeta{font-size:12px;color:var(--muted)}.diagram{padding:20px;background:#f3f8fa;border:1px solid var(--line);border-radius:8px;margin:20px 0}.diagram-title{font-size:12px;color:var(--muted);margin-bottom:12px}.nodes{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.node{padding:10px 12px;background:white;border:1px solid #a8cacd;border-radius:7px;font-size:12px;max-width:320px}.edges{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}.edge{font-size:12px;color:#294d60;border-left:3px solid #70b8af;padding:6px 10px;background:#fff}.diagram details{font-size:12px;margin-top:14px}.footer{font-size:12px;color:var(--muted);margin-top:20px}
+@media(max-width:1000px){aside{position:static;width:auto;max-height:230px}main{margin:0;padding:16px}article{padding:20px;overflow:auto}.edges{grid-template-columns:1fr}table{min-width:640px}}
+@media print{aside,.actions{display:none}main{margin:0;padding:0}body,article{background:white}article{border:0;padding:0;break-before:page}body{font-size:10pt}.hero{background:white;color:black;padding:0}.hero p{color:black}h2,h3{break-after:avoid}tr{break-inside:avoid}table{font-size:8pt}pre{color:black;background:#eee;white-space:pre-wrap}.node{max-width:none}.diagram{break-inside:avoid}@page{size:A4;margin:16mm}}
+</style></head><body><aside aria-label="문서 목차"><b>Processware</b><p>프로젝트 작업 공간<br>신규 문서 세트 1.0 · 2026-10-07</p><nav><a class="h1" href="#d1-1">Processware 프로젝트 작업 공간 기능 구조도</a><a class="h2" href="#d1-2">1. 기능 계층과 책임</a><a class="h2" href="#d1-3">2. 모듈별 요구사항 매핑</a><a class="h2" href="#d1-4">3. 공통 통제와 단계</a><a class="h2" href="#d1-5">4. 기존 구축 영역과 경계</a></nav></aside><main><header class="hero"><h1>프로젝트 작업 공간 기능 구조도</h1><p>승인된 템플릿 → 프로젝트 Vault → 사람과 Agent의 실행 → 증적과 검토된 환류.<br>24개 기능 · 12개 비기능 · 15개 업무 규칙 · 8개 화면 · 16개 상세 인수 시나리오</p><div class="actions"><a href="12_Processware_프로젝트작업공간_신규기획서.html">신규 기획서</a><a href="13_Processware_프로젝트작업공간_신규요구사항목록.csv">기획 요구사항 CSV</a><a href="18_Processware_프로젝트작업공간_기능_요구사항매핑.csv">상세 매핑 CSV</a><a href="17_Processware_프로젝트작업공간_기능구조도.html">기능 구조도</a><a href="19_Processware_프로젝트작업공간_화면목록_흐름도.html">화면 흐름도</a><a href="20_Processware_프로젝트작업공간_화면목록.csv">화면 CSV</a><button onclick="window.print()">인쇄 / PDF로 저장</button></div></header><article><p class="docmeta"><a href="17_Processware_프로젝트작업공간_기능구조도.md">편집용 Markdown</a> · 신규 기준선 1.0</p><h1 id="d1-1">Processware 프로젝트 작업 공간 기능 구조도</h1>
+<p>버전 1.0 · 2026-10-07 · 신규 프로젝트 작업 공간 PW 기준선 · 검토용 설계</p>
+<h2 id="d1-2">1. 기능 계층과 책임</h2>
+<p>사용자는 프로젝트 홈과 대화 작업실에서 업무를 시작한다. 각 기능 모듈은 동일한 권한·규칙·판·승인 command를 이용한다. 상위 표준 구축 영역은 승인 릴리스를 제공하고 검토된 개선 제안을 받으며 프로젝트 내용은 자동 공유하지 않는다.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">표준 구축 영역: 승인 템플릿·구축 Harness</span><span class="node">PW-M01 공간 생성·테일러링</span><span class="node">PW-M02 규칙 정의·검증</span><span class="node">PW-M03 Vault·콘텐츠</span><span class="node">PW-M04 대화·업무 Harness·실행</span><span class="node">PW-M05 검토·승인·접근</span><span class="node">PW-M06 이벤트·영향·보완</span><span class="node">PW-M07 기준선·증적·환류</span><span class="node">PW-M08 ALM 배포·동기화</span><span class="node">상위 검토 큐: 별도 승인</span></div><div class="edges"><div class="edge">표준 구축 영역: 승인 템플릿·구축 Harness → PW-M01 공간 생성·테일러링</div><div class="edge">PW-M01 공간 생성·테일러링 → PW-M02 규칙 정의·검증</div><div class="edge">PW-M01 공간 생성·테일러링 → PW-M03 Vault·콘텐츠</div><div class="edge">PW-M02 규칙 정의·검증 → PW-M04 대화·업무 Harness·실행</div><div class="edge">PW-M03 Vault·콘텐츠 ↔ PW-M04 대화·업무 Harness·실행</div><div class="edge">PW-M04 대화·업무 Harness·실행 → PW-M05 검토·승인·접근</div><div class="edge">PW-M05 검토·승인·접근 → PW-M06 이벤트·영향·보완</div><div class="edge">PW-M06 이벤트·영향·보완 → PW-M03 Vault·콘텐츠</div><div class="edge">PW-M03 Vault·콘텐츠 → PW-M07 기준선·증적·환류</div><div class="edge">PW-M04 대화·업무 Harness·실행 → PW-M08 ALM 배포·동기화</div><div class="edge">PW-M08 ALM 배포·동기화 → PW-M06 이벤트·영향·보완</div><div class="edge">PW-M07 기준선·증적·환류 → 상위 검토 큐: 별도 승인</div><div class="edge">상위 검토 큐: 별도 승인 → 표준 구축 영역: 승인 템플릿·구축 Harness</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  T[표준 구축 영역: 승인 템플릿·구축 Harness] --&gt; A[PW-M01 공간 생성·테일러링]
+  A --&gt; B[PW-M02 규칙 정의·검증]
+  A --&gt; C[PW-M03 Vault·콘텐츠]
+  B --&gt; D[PW-M04 대화·업무 Harness·실행]
+  C &lt;--&gt; D
+  D --&gt; E[PW-M05 검토·승인·접근]
+  E --&gt; F[PW-M06 이벤트·영향·보완]
+  F --&gt; C
+  C --&gt; G[PW-M07 기준선·증적·환류]
+  D --&gt; H[PW-M08 ALM 배포·동기화]
+  H --&gt; F
+  G --&gt; R[상위 검토 큐: 별도 승인]
+  R --&gt; T
+</pre></details></div>
+<h2 id="d1-3">2. 모듈별 요구사항 매핑</h2>
+<table>
+<thead>
+<tr>
+<th>모듈</th>
+<th>책임</th>
+<th>요구사항</th>
+<th>대표 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PW-M01</td>
+<td>공간 생성·테일러링</td>
+<td>PW-01 PW-02 PW-19</td>
+<td>초안 Workspace·적용 릴리스·초기 자산 목록 / 승인된 ProjectOverlayRevision·활성화 결과 / MigrationPlan·적용 기록·사전/사후 점검</td>
+</tr>
+<tr>
+<td>PW-M02</td>
+<td>프로세스 규칙 정의·검증</td>
+<td>PW-03 PW-10 PW-11 PW-18</td>
+<td>RuleDefinitionRevision·근거·검토 상태 / ValidationResult·허용/차단 결과·위반 위치 / RuleValidationReport·오류·경고·미결 목록 / ReviewGroup·ExceptionGrant·기한 업무</td>
+</tr>
+<tr>
+<td>PW-M03</td>
+<td>Vault·콘텐츠·수입</td>
+<td>PW-04 PW-05 PW-07 PW-17</td>
+<td>AssetItem·AssetRevision·TraceLink·SourceRecord / ImportBatch·원본·매핑·검토된 항목 수정판 / ChangeProposal·새 자산 수정판·변경 이력 / ConflictRecord·갱신된 제안·유효 결정</td>
+</tr>
+<tr>
+<td>PW-M04</td>
+<td>대화·Harness·실행</td>
+<td>PW-06 PW-08 PW-09</td>
+<td>ConversationTask·맥락 스냅샷·계획 후보 / WorkspaceHarnessRelease·평가 결과·적용 판 / ExecutionRun·도구 영수증·진행 이벤트</td>
+</tr>
+<tr>
+<td>PW-M05</td>
+<td>검토·승인·접근</td>
+<td>PW-12 PW-16</td>
+<td>ApprovalRequest·Decision·적용 결과 / Membership·PolicyDecision·접근 감사 기록</td>
+</tr>
+<tr>
+<td>PW-M06</td>
+<td>이벤트·영향·보완</td>
+<td>PW-13 PW-14</td>
+<td>EventRecord·처리 단계·후속 업무·재시도 기록 / ImpactAssessment·보완 업무·재검토 상태</td>
+</tr>
+<tr>
+<td>PW-M07</td>
+<td>기준선·증적·환류</td>
+<td>PW-15 PW-20 PW-21</td>
+<td>BaselineSnapshot·ExportReceipt·RestoreReport / EvidencePackage·PDF/DOCX 등 선택 출력·색인 / ImprovementProposal·검토 결정·전달 영수증</td>
+</tr>
+<tr>
+<td>PW-M08</td>
+<td>ALM 배포·동기화</td>
+<td>PW-22 PW-23 PW-24</td>
+<td>DeploymentPlan·원격 ID/판·단계 영수증 / SyncRecord·ConfigDrift·검토·복구 업무 / AdapterRelease·호환성·제한·평가 결과</td>
+</tr>
+</tbody>
+</table>
+<h2 id="d1-4">3. 공통 통제와 단계</h2>
+<p>인증·프로젝트 scope·유효 역할·expected revision·규칙 판정·승인 지문·감사·outbox·도구 Receipt는 모듈 공통 기반이다. Agent가 모듈을 호출해도 같은 통제가 집행된다.</p>
+<p>P1은 내부 작업 공간의 한 사이클(PW-01~15), P2는 현장 사용자·정합성 확대(PW-16~21), P3은 실제 ALM 구성·왕복·확장(PW-22~24)이다. 모듈 하나가 여러 단계를 포함할 수 있으며 모듈명만으로 전체 구현 완료를 표시하지 않는다.</p>
+<h2 id="d1-5">4. 기존 구축 영역과 경계</h2>
+<p>입력은 승인된 TemplateRelease이며 산출물 유형·규칙·Agent 도구 계약·평가·권한/이용 범위를 수신한다. 출력은 프로젝트 산출물·실행 기록·기준선 및 검토된 ImprovementProposal이다. 조직 자산·공유 Harness 직접 갱신은 이 도메인의 권한이 아니다.</p>
+</article><p class="footer">신규 범위의 기획·상세 설계 문서입니다. 기존 문서는 별도 기준선을 유지합니다. 실제 제품 구현·배포·ALM 지원 검증을 의미하지 않습니다.</p></main></body></html>

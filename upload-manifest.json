@@ -1,0 +1,208 @@
+{
+  "export_date": "2026-10-09",
+  "original_documents": 29,
+  "conversation": {
+    "title": "Processware 제품 기획 대화",
+    "export_date": "2026-10-09",
+    "scope": "사용자 메시지·AI 최종 답변·진행 메시지. 최초 요청부터 저장소 업로드 요청까지.",
+    "processing": "자동 첨부 UI/환경 정보, 내부 지시, 비공개 추론, 도구 호출·출력은 제외. 기계별 로컬 문서 경로를 저장소 상대 경로로 변환. 사용자 답변·주석은 보존.",
+    "messages": 137,
+    "by_role": {
+      "user": 50,
+      "assistant": 87
+    },
+    "assistant_phases": {
+      "commentary": 40,
+      "final_answer": 47
+    },
+    "first_timestamp": "2026-10-06T14:03:05.333Z",
+    "last_timestamp": "2026-10-09T05:50:42.357Z"
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 80,
+      "sha256": "f626b032c9370de7cdedd3bca13d77f908caabfbc7160ec629076863a7e40fe2"
+    },
+    {
+      "path": "conversation/decisions-and-next-steps.md",
+      "bytes": 4987,
+      "sha256": "33c7041f95025815c1e1e762d7a24539b787d579491cd429644c9953c418dbf3"
+    },
+    {
+      "path": "conversation/README.md",
+      "bytes": 765,
+      "sha256": "15d6e25af0f35400bb6d42ac9a969e5f3f8e18bcaef5fa28555efea133216ffa"
+    },
+    {
+      "path": "conversation/transcript.json",
+      "bytes": 149768,
+      "sha256": "6094b02a5f1cba397376ea515f92d6beeda506909c75cf31518a29a584ed1712"
+    },
+    {
+      "path": "conversation/transcript.md",
+      "bytes": 130140,
+      "sha256": "095af3c07432b46b014875e626547dbc4d51ff6cd27a98f3490d71209cb153ec"
+    },
+    {
+      "path": "docs/00_Processware_기획_요구사항_통합.html",
+      "bytes": 387647,
+      "sha256": "847f35834a6d07b73808f34b8afc5ae2ae547e3ff62660dd97f3e61be036a521"
+    },
+    {
+      "path": "docs/01_Processware_기획서.md",
+      "bytes": 40164,
+      "sha256": "bde230c7058c32068fee7403748e3f437c69e73be06286e81293c21c4fd57787"
+    },
+    {
+      "path": "docs/02_Processware_요구사항정의서.md",
+      "bytes": 210420,
+      "sha256": "89cc989072d1629cf578b64b9a0537d05717acb20de1c4c1482c8e3843b4b86e"
+    },
+    {
+      "path": "docs/03_Processware_구현가이드.md",
+      "bytes": 27808,
+      "sha256": "139861ce554eb6abfc8c15d1b7b5d682111e08984ea3d9975173da93807a8ce1"
+    },
+    {
+      "path": "docs/04_Processware_요구사항목록.csv",
+      "bytes": 75943,
+      "sha256": "0145ae123e9ac11e52aa2d17b4675476dd5e3d8d275c0b7ad35d5f5437700562"
+    },
+    {
+      "path": "docs/05_Processware_대화형_UI_UX_상세명세.md",
+      "bytes": 41413,
+      "sha256": "0aff04128d9f5f9ea8c73207cca6c2c644ada22fad0680753d9beedaa1edb01d"
+    },
+    {
+      "path": "docs/06_Processware_기능구조도.html",
+      "bytes": 42208,
+      "sha256": "6ed43861e728452e1d70e5315e9b0c0a6ca5b883c7e8d459a1c81f2d680ef9c5"
+    },
+    {
+      "path": "docs/06_Processware_기능구조도.md",
+      "bytes": 28354,
+      "sha256": "ba4651c8f06c581638fcb9dab0e046c7fd0815b1f561410ee9a55afca2939a19"
+    },
+    {
+      "path": "docs/07_Processware_기능구조_요구사항매핑.csv",
+      "bytes": 9381,
+      "sha256": "1096535729166e3082788b0a0ae32edb9f6cde8c0098ced2588395aef03bbdf8"
+    },
+    {
+      "path": "docs/08_Processware_화면목록_화면흐름도.html",
+      "bytes": 170658,
+      "sha256": "4095e7bc0b4795f5f3ed084da52a2d953051c94f739049635cccc2d39db1993d"
+    },
+    {
+      "path": "docs/08_Processware_화면목록_화면흐름도.md",
+      "bytes": 47206,
+      "sha256": "c46bf60fff08ffa80b7a5698f639224704e08bbf9f67fb6061ec08ef0302804a"
+    },
+    {
+      "path": "docs/09_Processware_화면목록.csv",
+      "bytes": 9435,
+      "sha256": "e4f0988e797a2297fdf5fbc69b707dccaa54818969d0542ccd1a1d512c85810e"
+    },
+    {
+      "path": "docs/10_Processware_Harness_검증개선_상세명세.md",
+      "bytes": 6331,
+      "sha256": "b8e64e9c9fe094c30747d3310205857d57bf4b4176bd8b8a88387ceb41503539"
+    },
+    {
+      "path": "docs/11_Processware_프로젝트배포_현장정비_증적지적자산_명세.md",
+      "bytes": 7479,
+      "sha256": "6e061d41edecf110e7c9335068218374baf615d740821d313303da254ee0836f"
+    },
+    {
+      "path": "docs/12_Processware_프로젝트작업공간_신규기획서.html",
+      "bytes": 37660,
+      "sha256": "4d040db419a5eb123ac48a37519cb67074844e4a8db1fabd01da9f5209bbf610"
+    },
+    {
+      "path": "docs/12_Processware_프로젝트작업공간_신규기획서.md",
+      "bytes": 26898,
+      "sha256": "1550c917a1b7800f561843793363488a541d91a01295b394fc7093c176bedc16"
+    },
+    {
+      "path": "docs/13_Processware_프로젝트작업공간_신규요구사항목록.csv",
+      "bytes": 2683,
+      "sha256": "45f369e46022e67053f59b0d9073805466116b0ded2807210a1af3811f013a41"
+    },
+    {
+      "path": "docs/14_Processware_프로젝트작업공간_요구사항정의서.md",
+      "bytes": 35225,
+      "sha256": "03c55574b52c4543b99c9516abba0762fccf51c8a7edcf2c3dd22612ccc38ce1"
+    },
+    {
+      "path": "docs/15_Processware_프로젝트작업공간_구현가이드.md",
+      "bytes": 7715,
+      "sha256": "36252cf306e2533d664a5e3b1a80de9f7082c6f71c2c0eba3f1211db4c5812e0"
+    },
+    {
+      "path": "docs/16_Processware_프로젝트작업공간_UI_UX_상세명세.md",
+      "bytes": 6446,
+      "sha256": "8f35fbe106b5ef53e31acf2a3196ee0afb811daa1c96d08bad2b24cde64f9910"
+    },
+    {
+      "path": "docs/17_Processware_프로젝트작업공간_기능구조도.html",
+      "bytes": 11452,
+      "sha256": "81ffe31a59fe14d8d296c71cae0c4f87493d3ace70eec0539155f3b468260da2"
+    },
+    {
+      "path": "docs/17_Processware_프로젝트작업공간_기능구조도.md",
+      "bytes": 3801,
+      "sha256": "e3181634c0f73504929749263f1d0c703bb82a2045168c6c3af80bc8d0d1e899"
+    },
+    {
+      "path": "docs/18_Processware_프로젝트작업공간_기능_요구사항매핑.csv",
+      "bytes": 3369,
+      "sha256": "c07b78f138061dd212249a99346dfd7d143677a68c1571cc046c0827daca5023"
+    },
+    {
+      "path": "docs/19_Processware_프로젝트작업공간_화면목록_흐름도.html",
+      "bytes": 27455,
+      "sha256": "458499e5a757481fa3b479990b6deb5e6a70024d1da765774c5fa0d0953e895f"
+    },
+    {
+      "path": "docs/19_Processware_프로젝트작업공간_화면목록_흐름도.md",
+      "bytes": 8458,
+      "sha256": "c871d1286033276131ca8ed21668de83bd871c90df879e30bf4bfa477c121132"
+    },
+    {
+      "path": "docs/20_Processware_프로젝트작업공간_화면목록.csv",
+      "bytes": 2155,
+      "sha256": "5da93c2872e5eb935c5b6e63070d5f1a496214865efcc65d97043ce2f42d7873"
+    },
+    {
+      "path": "docs/21_Processware_프로젝트작업공간_Harness_실행검증개선_상세명세.md",
+      "bytes": 5026,
+      "sha256": "beb61e8d5e1da0984bfd9523c303620a5cbde0842ed61222cc4370bab3daa3c1"
+    },
+    {
+      "path": "docs/22_Processware_프로젝트작업공간_배포연동_증적환류_상세명세.md",
+      "bytes": 6741,
+      "sha256": "46a7f3df33defb92f44e9b6d272effaad5e0da16760b20866a78e11cd23fda46"
+    },
+    {
+      "path": "docs/23_Processware_프로젝트작업공간_기획_요구사항_통합.html",
+      "bytes": 146444,
+      "sha256": "fada26f5a3bd028fb3e40e3c859d6a8f66d7ba7d73ab66e51f7f6216982b7d82"
+    },
+    {
+      "path": "docs/INDEX.md",
+      "bytes": 3873,
+      "sha256": "0598f2c761734633bb0bcdd23d2006375562b731676423309f90afd892fca88c"
+    },
+    {
+      "path": "downloads/Processware_전체문서_2026-10-09.zip",
+      "bytes": 440968,
+      "sha256": "a4439c138d93d48de8602425608ab10b36b992b8a0f751dbb33b63a27871c2e3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2355,
+      "sha256": "d89d8ca4c13d1fb65002a8e38d4b4091ea37a4a8eb0db8da8af19f1ba94b0f99"
+    }
+  ]
+}

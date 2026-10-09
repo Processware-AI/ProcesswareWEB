@@ -1,0 +1,258 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>프로젝트 작업 공간 화면 목록·흐름도</title><style>
+:root{--ink:#193044;--muted:#617589;--accent:#087d82;--line:#dce5ec}*{box-sizing:border-box}body{margin:0;background:#eff4f7;color:var(--ink);font:15px/1.85 "Malgun Gothic",system-ui,sans-serif}a{color:#08747e;text-underline-offset:3px}aside{position:fixed;inset:0 auto 0 0;width:280px;background:#142c3c;color:#fff;padding:25px 20px;overflow:auto}aside b{font-size:25px}aside p{font-size:12px;color:#b9ced9}aside a{display:block;color:#d0e2eb;text-decoration:none;padding:6px 8px;font-size:12px;border-radius:5px}aside a:hover{background:#294c60}aside .h1{font-weight:bold;font-size:14px;margin-top:12px}main{margin-left:280px;padding:30px;max-width:1540px}.hero{padding:30px;background:#142c3c;color:white;border-radius:12px}.hero h1{font-size:30px;line-height:1.5}.hero p{color:#cee0ea}.actions{display:flex;gap:9px;flex-wrap:wrap}.actions a,.actions button{background:white;border:0;border-radius:5px;padding:8px 12px;color:#164357;font:inherit;font-size:13px;text-decoration:none;cursor:pointer}article{background:white;border:1px solid var(--line);padding:32px;border-radius:12px;margin-top:24px}h1{font-size:28px;line-height:1.5}h2{scroll-margin-top:20px;margin:38px 0 15px;font-size:23px}h3{font-size:18px;color:#087d82;margin:28px 0 12px}table{width:100%;border-collapse:collapse;font-size:12px;margin:20px 0}th,td{border:1px solid var(--line);padding:9px;vertical-align:top;text-align:left;overflow-wrap:anywhere}th{background:#eaf1f5}tr:nth-child(even){background:#f8fafb}blockquote{border-left:4px solid var(--accent);background:#edf7f6;margin:18px 0;padding:8px 18px}li{margin:7px 0}pre{background:#142c3c;color:#deebf2;padding:20px;border-radius:8px;overflow:auto;font:12px/1.7 Consolas,monospace}code{font:12px Consolas,monospace}.docmeta{font-size:12px;color:var(--muted)}.diagram{padding:20px;background:#f3f8fa;border:1px solid var(--line);border-radius:8px;margin:20px 0}.diagram-title{font-size:12px;color:var(--muted);margin-bottom:12px}.nodes{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.node{padding:10px 12px;background:white;border:1px solid #a8cacd;border-radius:7px;font-size:12px;max-width:320px}.edges{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}.edge{font-size:12px;color:#294d60;border-left:3px solid #70b8af;padding:6px 10px;background:#fff}.diagram details{font-size:12px;margin-top:14px}.footer{font-size:12px;color:var(--muted);margin-top:20px}
+@media(max-width:1000px){aside{position:static;width:auto;max-height:230px}main{margin:0;padding:16px}article{padding:20px;overflow:auto}.edges{grid-template-columns:1fr}table{min-width:640px}}
+@media print{aside,.actions{display:none}main{margin:0;padding:0}body,article{background:white}article{border:0;padding:0;break-before:page}body{font-size:10pt}.hero{background:white;color:black;padding:0}.hero p{color:black}h2,h3{break-after:avoid}tr{break-inside:avoid}table{font-size:8pt}pre{color:black;background:#eee;white-space:pre-wrap}.node{max-width:none}.diagram{break-inside:avoid}@page{size:A4;margin:16mm}}
+</style></head><body><aside aria-label="문서 목차"><b>Processware</b><p>프로젝트 작업 공간<br>신규 문서 세트 1.0 · 2026-10-07</p><nav><a class="h1" href="#d1-1">Processware 프로젝트 작업 공간 화면 목록·흐름도</a><a class="h2" href="#d1-2">1. 전체 화면 목록</a><a class="h2" href="#d1-3">2. 전체 흐름</a><a class="h2" href="#d1-4">PW-UI01 프로젝트 홈</a><a class="h2" href="#d1-5">PW-UI02 생성·조정</a><a class="h2" href="#d1-6">PW-UI03 대화 작업실</a><a class="h2" href="#d1-7">PW-UI04 Vault 탐색·편집</a><a class="h2" href="#d1-8">PW-UI05 변경·검토·승인</a><a class="h2" href="#d1-9">PW-UI06 실행·정합성</a><a class="h2" href="#d1-10">PW-UI07 기준선·증적·출력</a><a class="h2" href="#d1-11">PW-UI08 설정·연동·개선</a><a class="h2" href="#d1-12">3. 핵심 업무 흐름</a></nav></aside><main><header class="hero"><h1>프로젝트 작업 공간 화면 목록·흐름도</h1><p>승인된 템플릿 → 프로젝트 Vault → 사람과 Agent의 실행 → 증적과 검토된 환류.<br>24개 기능 · 12개 비기능 · 15개 업무 규칙 · 8개 화면 · 16개 상세 인수 시나리오</p><div class="actions"><a href="12_Processware_프로젝트작업공간_신규기획서.html">신규 기획서</a><a href="13_Processware_프로젝트작업공간_신규요구사항목록.csv">기획 요구사항 CSV</a><a href="18_Processware_프로젝트작업공간_기능_요구사항매핑.csv">상세 매핑 CSV</a><a href="17_Processware_프로젝트작업공간_기능구조도.html">기능 구조도</a><a href="19_Processware_프로젝트작업공간_화면목록_흐름도.html">화면 흐름도</a><a href="20_Processware_프로젝트작업공간_화면목록.csv">화면 CSV</a><button onclick="window.print()">인쇄 / PDF로 저장</button></div></header><article><p class="docmeta"><a href="19_Processware_프로젝트작업공간_화면목록_흐름도.md">편집용 Markdown</a> · 신규 기준선 1.0</p><h1 id="d1-1">Processware 프로젝트 작업 공간 화면 목록·흐름도</h1>
+<p>버전 1.0 · 2026-10-07 · 신규 프로젝트 작업 공간 PW 기준선 · 검토용 설계</p>
+<h2 id="d1-2">1. 전체 화면 목록</h2>
+<p>대표 요구사항은 화면별 주 책임 매핑이며 기능을 그 화면에만 제한하지 않는다. PW-01 생성 작업은 프로젝트 홈에서 시작해 PW-UI02에서 구성한다. 공통 변경·승인·검증은 작업실과 개별 패널에서 연결된다.</p>
+<table>
+<thead>
+<tr>
+<th>화면</th>
+<th>이름</th>
+<th>단계</th>
+<th>주 책임 요구사항</th>
+<th>연결 화면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PW-UI01</td>
+<td>프로젝트 홈</td>
+<td>P1</td>
+<td>PW-01</td>
+<td>PW-UI02 PW-UI03</td>
+</tr>
+<tr>
+<td>PW-UI02</td>
+<td>생성·조정</td>
+<td>P1</td>
+<td>PW-02 PW-03 PW-11</td>
+<td>PW-UI03 PW-UI08</td>
+</tr>
+<tr>
+<td>PW-UI03</td>
+<td>대화 작업실</td>
+<td>P1</td>
+<td>PW-06 PW-08 PW-09</td>
+<td>PW-UI04 PW-UI05 PW-UI06</td>
+</tr>
+<tr>
+<td>PW-UI04</td>
+<td>Vault 탐색·편집</td>
+<td>P1/P2</td>
+<td>PW-04 PW-05 PW-07 PW-17</td>
+<td>PW-UI03 PW-UI05</td>
+</tr>
+<tr>
+<td>PW-UI05</td>
+<td>변경·검토·승인</td>
+<td>P1/P2</td>
+<td>PW-12 PW-18</td>
+<td>PW-UI04 PW-UI06</td>
+</tr>
+<tr>
+<td>PW-UI06</td>
+<td>실행·정합성</td>
+<td>P1</td>
+<td>PW-10 PW-13 PW-14</td>
+<td>PW-UI03 PW-UI04 PW-UI05</td>
+</tr>
+<tr>
+<td>PW-UI07</td>
+<td>기준선·증적·출력</td>
+<td>P1/P2</td>
+<td>PW-15 PW-20</td>
+<td>PW-UI04 PW-UI05</td>
+</tr>
+<tr>
+<td>PW-UI08</td>
+<td>설정·연동·개선</td>
+<td>P2/P3</td>
+<td>PW-16 PW-19 PW-21 PW-22 PW-23 PW-24</td>
+<td>PW-UI02 PW-UI05 PW-UI06</td>
+</tr>
+</tbody>
+</table>
+<h2 id="d1-3">2. 전체 흐름</h2>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">PW-UI01 프로젝트 홈</span><span class="node">PW-UI02 생성·조정</span><span class="node">PW-UI03 대화 작업실</span><span class="node">PW-UI04 Vault 탐색·편집</span><span class="node">PW-UI05 변경·검토·승인</span><span class="node">PW-UI06 실행·정합성</span><span class="node">PW-UI07 기준선·증적·출력</span><span class="node">PW-UI08 설정·연동·개선</span></div><div class="edges"><div class="edge">PW-UI01 프로젝트 홈 → PW-UI02 생성·조정</div><div class="edge">PW-UI02 생성·조정 → PW-UI03 대화 작업실</div><div class="edge">PW-UI01 프로젝트 홈 → PW-UI03 대화 작업실</div><div class="edge">PW-UI03 대화 작업실 ↔ PW-UI04 Vault 탐색·편집</div><div class="edge">PW-UI04 Vault 탐색·편집 → PW-UI05 변경·검토·승인</div><div class="edge">PW-UI05 변경·검토·승인 → PW-UI06 실행·정합성</div><div class="edge">PW-UI06 실행·정합성 → PW-UI04 Vault 탐색·편집</div><div class="edge">PW-UI05 변경·검토·승인 → PW-UI07 기준선·증적·출력</div><div class="edge">PW-UI03 대화 작업실 → PW-UI08 설정·연동·개선</div><div class="edge">PW-UI08 설정·연동·개선 → PW-UI05 변경·검토·승인</div><div class="edge">PW-UI08 설정·연동·개선 → PW-UI06 실행·정합성</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  A[PW-UI01 프로젝트 홈] --&gt; B[PW-UI02 생성·조정]
+  B --&gt; C[PW-UI03 대화 작업실]
+  A --&gt; C
+  C &lt;--&gt; D[PW-UI04 Vault 탐색·편집]
+  D --&gt; E[PW-UI05 변경·검토·승인]
+  E --&gt; F[PW-UI06 실행·정합성]
+  F --&gt; D
+  E --&gt; G[PW-UI07 기준선·증적·출력]
+  C --&gt; H[PW-UI08 설정·연동·개선]
+  H --&gt; E
+  H --&gt; F
+</pre></details></div>
+<h2 id="d1-4">PW-UI01 프로젝트 홈</h2>
+<p>단계: P1 · 요구사항: PW-01</p>
+<p>프로젝트 목록 → 선택 → 권한 확인 → 현재 공간·담당 업무 → 작업실 진입.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">프로젝트 목록</span><span class="node">선택</span><span class="node">권한 확인</span><span class="node">현재 공간·담당 업무</span><span class="node">작업실 진입</span></div><div class="edges"><div class="edge">프로젝트 목록 → 선택</div><div class="edge">선택 → 권한 확인</div><div class="edge">권한 확인 → 현재 공간·담당 업무</div><div class="edge">현재 공간·담당 업무 → 작업실 진입</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;프로젝트 목록&quot;]
+  N1[&quot;선택&quot;]
+  N2[&quot;권한 확인&quot;]
+  N3[&quot;현재 공간·담당 업무&quot;]
+  N4[&quot;작업실 진입&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+</pre></details></div>
+<p>예외·복귀: 무권한 공간은 표시하지 않는다. 공간 미선택 상태에서 업무 실행을 시작하지 않는다.</p>
+<h2 id="d1-5">PW-UI02 생성·조정</h2>
+<p>단계: P1 · 요구사항: PW-02 PW-03 PW-11</p>
+<p>템플릿 선택 → 범위·역할 조정 → 규칙 검토 → 정의 검사 → 오류 보완 또는 생성안 승인 → 공간 활성화.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">템플릿 선택</span><span class="node">범위·역할 조정</span><span class="node">규칙 검토</span><span class="node">정의 검사</span><span class="node">오류 보완 또는 생성안 승인</span><span class="node">공간 활성화</span></div><div class="edges"><div class="edge">템플릿 선택 → 범위·역할 조정</div><div class="edge">범위·역할 조정 → 규칙 검토</div><div class="edge">규칙 검토 → 정의 검사</div><div class="edge">정의 검사 → 오류 보완 또는 생성안 승인</div><div class="edge">오류 보완 또는 생성안 승인 → 공간 활성화</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;템플릿 선택&quot;]
+  N1[&quot;범위·역할 조정&quot;]
+  N2[&quot;규칙 검토&quot;]
+  N3[&quot;정의 검사&quot;]
+  N4[&quot;오류 보완 또는 생성안 승인&quot;]
+  N5[&quot;공간 활성화&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+  N4 --&gt; N5
+</pre></details></div>
+<p>예외·복귀: 검사 실패→해당 조정 항목으로 복귀. 취소→초안 보존/폐기 선택. 필수 미결→운영 활성화 금지.</p>
+<h2 id="d1-6">PW-UI03 대화 작업실</h2>
+<p>단계: P1 · 요구사항: PW-06 PW-08 PW-09</p>
+<p>의도 입력 → 허용 맥락 조회 → 계획·질문 → 실행 구성 확인 → 실행/승인 대기 → 결과 패널 → 다음 업무.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">의도 입력</span><span class="node">허용 맥락 조회</span><span class="node">계획·질문</span><span class="node">실행 구성 확인</span><span class="node">실행/승인 대기</span><span class="node">결과 패널</span><span class="node">다음 업무</span></div><div class="edges"><div class="edge">의도 입력 → 허용 맥락 조회</div><div class="edge">허용 맥락 조회 → 계획·질문</div><div class="edge">계획·질문 → 실행 구성 확인</div><div class="edge">실행 구성 확인 → 실행/승인 대기</div><div class="edge">실행/승인 대기 → 결과 패널</div><div class="edge">결과 패널 → 다음 업무</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;의도 입력&quot;]
+  N1[&quot;허용 맥락 조회&quot;]
+  N2[&quot;계획·질문&quot;]
+  N3[&quot;실행 구성 확인&quot;]
+  N4[&quot;실행/승인 대기&quot;]
+  N5[&quot;결과 패널&quot;]
+  N6[&quot;다음 업무&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+  N4 --&gt; N5
+  N5 --&gt; N6
+</pre></details></div>
+<p>예외·복귀: 정보 부족→질문 대기. 사람 승인 필요→PW-UI05. 연결 종료→서버 상태 조회. 중단→완료 단계·부작용 확인.</p>
+<h2 id="d1-7">PW-UI04 Vault 탐색·편집</h2>
+<p>단계: P1/P2 · 요구사항: PW-04 PW-05 PW-07 PW-17</p>
+<p>검색·관계 탐색 → 특정 항목 판 선택 → 직접/AI 수정 또는 파일 수입 → 변경안 → 기준 판 검사 → 충돌 해결 또는 검토 요청.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">검색·관계 탐색</span><span class="node">특정 항목 판 선택</span><span class="node">직접/AI 수정 또는 파일 수입</span><span class="node">변경안</span><span class="node">기준 판 검사</span><span class="node">충돌 해결 또는 검토 요청</span></div><div class="edges"><div class="edge">검색·관계 탐색 → 특정 항목 판 선택</div><div class="edge">특정 항목 판 선택 → 직접/AI 수정 또는 파일 수입</div><div class="edge">직접/AI 수정 또는 파일 수입 → 변경안</div><div class="edge">변경안 → 기준 판 검사</div><div class="edge">기준 판 검사 → 충돌 해결 또는 검토 요청</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;검색·관계 탐색&quot;]
+  N1[&quot;특정 항목 판 선택&quot;]
+  N2[&quot;직접/AI 수정 또는 파일 수입&quot;]
+  N3[&quot;변경안&quot;]
+  N4[&quot;기준 판 검사&quot;]
+  N5[&quot;충돌 해결 또는 검토 요청&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+  N4 --&gt; N5
+</pre></details></div>
+<p>예외·복귀: 추출 실패→원본/미지원 안내. 판 충돌→차이 비교→제안 재구성. 승인판 수정→새 수정안.</p>
+<h2 id="d1-8">PW-UI05 변경·검토·승인</h2>
+<p>단계: P1/P2 · 요구사항: PW-12 PW-18</p>
+<p>요청 선택 → 대상 판·근거·차이 확인 → 규칙 검사 → 보완/반려 또는 승인 → 적용 판·실행 결과 확인.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">요청 선택</span><span class="node">대상 판·근거·차이 확인</span><span class="node">규칙 검사</span><span class="node">보완/반려 또는 승인</span><span class="node">적용 판·실행 결과 확인</span></div><div class="edges"><div class="edge">요청 선택 → 대상 판·근거·차이 확인</div><div class="edge">대상 판·근거·차이 확인 → 규칙 검사</div><div class="edge">규칙 검사 → 보완/반려 또는 승인</div><div class="edge">보완/반려 또는 승인 → 적용 판·실행 결과 확인</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;요청 선택&quot;]
+  N1[&quot;대상 판·근거·차이 확인&quot;]
+  N2[&quot;규칙 검사&quot;]
+  N3[&quot;보완/반려 또는 승인&quot;]
+  N4[&quot;적용 판·실행 결과 확인&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+</pre></details></div>
+<p>예외·복귀: 낡은 판·만료·권한 변경→승인 불가. 반려→PW-UI04. 적용 실패→PW-UI06. 기한 경과는 자동 승인 아님.</p>
+<h2 id="d1-9">PW-UI06 실행·정합성</h2>
+<p>단계: P1 · 요구사항: PW-10 PW-13 PW-14</p>
+<p>실행/이벤트 선택 → 판정·단계 영수증 확인 → 위반 위치/실패 원인 → 보완 또는 승인된 재시도 → 결과 확인.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">실행/이벤트 선택</span><span class="node">판정·단계 영수증 확인</span><span class="node">위반 위치/실패 원인</span><span class="node">보완 또는 승인된 재시도</span><span class="node">결과 확인</span></div><div class="edges"><div class="edge">실행/이벤트 선택 → 판정·단계 영수증 확인</div><div class="edge">판정·단계 영수증 확인 → 위반 위치/실패 원인</div><div class="edge">위반 위치/실패 원인 → 보완 또는 승인된 재시도</div><div class="edge">보완 또는 승인된 재시도 → 결과 확인</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;실행/이벤트 선택&quot;]
+  N1[&quot;판정·단계 영수증 확인&quot;]
+  N2[&quot;위반 위치/실패 원인&quot;]
+  N3[&quot;보완 또는 승인된 재시도&quot;]
+  N4[&quot;결과 확인&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+</pre></details></div>
+<p>예외·복귀: 외부 결과 불명→확인 대기. 금지 재시도→수동 조치. 중복 이벤트→기존 처리 결과 조회. 판정 불가→자료 보완.</p>
+<h2 id="d1-10">PW-UI07 기준선·증적·출력</h2>
+<p>단계: P1/P2 · 요구사항: PW-15 PW-20</p>
+<p>목적·범위 선택 → 항목 판·근거 수집 → 누락·권한 점검 → 기준선/패키지 검토 → 출력 생성·해시 확인 → 다운로드.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">목적·범위 선택</span><span class="node">항목 판·근거 수집</span><span class="node">누락·권한 점검</span><span class="node">기준선/패키지 검토</span><span class="node">출력 생성·해시 확인</span><span class="node">다운로드</span></div><div class="edges"><div class="edge">목적·범위 선택 → 항목 판·근거 수집</div><div class="edge">항목 판·근거 수집 → 누락·권한 점검</div><div class="edge">누락·권한 점검 → 기준선/패키지 검토</div><div class="edge">기준선/패키지 검토 → 출력 생성·해시 확인</div><div class="edge">출력 생성·해시 확인 → 다운로드</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;목적·범위 선택&quot;]
+  N1[&quot;항목 판·근거 수집&quot;]
+  N2[&quot;누락·권한 점검&quot;]
+  N3[&quot;기준선/패키지 검토&quot;]
+  N4[&quot;출력 생성·해시 확인&quot;]
+  N5[&quot;다운로드&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+  N4 --&gt; N5
+</pre></details></div>
+<p>예외·복귀: 자료/해시 누락→완료 금지 또는 명시적 제외 검토. 권한 위반→항목 제외/정책 검토. 생성 실패→재생성 이력.</p>
+<h2 id="d1-11">PW-UI08 설정·연동·개선</h2>
+<p>단계: P2/P3 · 요구사항: PW-16 PW-19 PW-21 PW-22 PW-23 PW-24</p>
+<p>설정 작업 선택 → 변경안·영향·지원표 → 정책/권한 검사 → 승인 → 적용·외부 확인 → 기록·차이 점검.</p>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">설정 작업 선택</span><span class="node">변경안·영향·지원표</span><span class="node">정책/권한 검사</span><span class="node">승인</span><span class="node">적용·외부 확인</span><span class="node">기록·차이 점검</span></div><div class="edges"><div class="edge">설정 작업 선택 → 변경안·영향·지원표</div><div class="edge">변경안·영향·지원표 → 정책/권한 검사</div><div class="edge">정책/권한 검사 → 승인</div><div class="edge">승인 → 적용·외부 확인</div><div class="edge">적용·외부 확인 → 기록·차이 점검</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  N0[&quot;설정 작업 선택&quot;]
+  N1[&quot;변경안·영향·지원표&quot;]
+  N2[&quot;정책/권한 검사&quot;]
+  N3[&quot;승인&quot;]
+  N4[&quot;적용·외부 확인&quot;]
+  N5[&quot;기록·차이 점검&quot;]
+  N0 --&gt; N1
+  N1 --&gt; N2
+  N2 --&gt; N3
+  N3 --&gt; N4
+  N4 --&gt; N5
+</pre></details></div>
+<p>예외·복귀: 지원 불가 필수 통제→운영 배포 차단. 충돌→기준 시스템·차이 검토. 갱신→진행 run 계획. 환류→별도 조직 승인.</p>
+<h2 id="d1-12">3. 핵심 업무 흐름</h2>
+<h3 id="d1-13">3.1 대화 변경과 판 충돌</h3>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">선택 자산 판으로 수정 요청</span><span class="node">변경 제안·근거·영향</span><span class="node">현재 판 일치?</span><span class="node">차이 검토·제안 재구성</span><span class="node">규칙·권한 검사</span><span class="node">필요 검토·승인</span><span class="node">적용 직전 판·승인 재검사</span><span class="node">새 판·outbox·Receipt</span></div><div class="edges"><div class="edge">선택 자산 판으로 수정 요청 → 변경 제안·근거·영향</div><div class="edge">변경 제안·근거·영향 → 현재 판 일치?</div><div class="edge">현재 판 일치? → 차이 검토·제안 재구성 · 아니오</div><div class="edge">차이 검토·제안 재구성 → 변경 제안·근거·영향</div><div class="edge">현재 판 일치? → 규칙·권한 검사 · 예</div><div class="edge">규칙·권한 검사 → 필요 검토·승인</div><div class="edge">필요 검토·승인 → 적용 직전 판·승인 재검사</div><div class="edge">적용 직전 판·승인 재검사 → 새 판·outbox·Receipt</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  A[선택 자산 판으로 수정 요청] --&gt; B[변경 제안·근거·영향]
+  B --&gt; C{현재 판 일치?}
+  C --&gt;|아니오| D[차이 검토·제안 재구성]
+  D --&gt; B
+  C --&gt;|예| E[규칙·권한 검사]
+  E --&gt; F[필요 검토·승인]
+  F --&gt; G[적용 직전 판·승인 재검사]
+  G --&gt; H[새 판·outbox·Receipt]
+</pre></details></div>
+<h3 id="d1-14">3.2 이벤트·외부 실패 복구</h3>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">변경 이벤트 수신</span><span class="node">같은 처리 키 존재?</span><span class="node">기존 결과 확인</span><span class="node">판·권한·규칙 검사</span><span class="node">후속 작업 실행</span><span class="node">결과 확인 가능?</span><span class="node">단계 Receipt·완료</span><span class="node">확인 대기·원격 조회</span><span class="node">미완료 단계 재시도 또는 수동 조치</span></div><div class="edges"><div class="edge">변경 이벤트 수신 → 같은 처리 키 존재?</div><div class="edge">같은 처리 키 존재? → 기존 결과 확인 · 예</div><div class="edge">같은 처리 키 존재? → 판·권한·규칙 검사 · 아니오</div><div class="edge">판·권한·규칙 검사 → 후속 작업 실행</div><div class="edge">후속 작업 실행 → 결과 확인 가능?</div><div class="edge">결과 확인 가능? → 단계 Receipt·완료 · 예</div><div class="edge">결과 확인 가능? → 확인 대기·원격 조회 · 아니오</div><div class="edge">확인 대기·원격 조회 → 미완료 단계 재시도 또는 수동 조치</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  A[변경 이벤트 수신] --&gt; B{같은 처리 키 존재?}
+  B --&gt;|예| C[기존 결과 확인]
+  B --&gt;|아니오| D[판·권한·규칙 검사]
+  D --&gt; E[후속 작업 실행]
+  E --&gt; F{결과 확인 가능?}
+  F --&gt;|예| G[단계 Receipt·완료]
+  F --&gt;|아니오| H[확인 대기·원격 조회]
+  H --&gt; I[미완료 단계 재시도 또는 수동 조치]
+</pre></details></div>
+<h3 id="d1-15">3.3 템플릿 갱신·환류</h3>
+<div class="diagram"><div class="diagram-title">정의된 노드와 흐름 연결</div><div class="nodes"><span class="node">새 템플릿/Harness 릴리스</span><span class="node">차이·데이터·권한·진행 run 영향</span><span class="node">이전 계획 검토·승인</span><span class="node">적용·사후 검사·이력</span><span class="node">프로젝트 실행 사례</span><span class="node">일반화·이용권·민감 정보 검토</span><span class="node">상위 개선 제안 수신</span><span class="node">조직의 별도 검토·승인</span></div><div class="edges"><div class="edge">새 템플릿/Harness 릴리스 → 차이·데이터·권한·진행 run 영향</div><div class="edge">차이·데이터·권한·진행 run 영향 → 이전 계획 검토·승인</div><div class="edge">이전 계획 검토·승인 → 적용·사후 검사·이력</div><div class="edge">적용·사후 검사·이력 → 프로젝트 실행 사례</div><div class="edge">프로젝트 실행 사례 → 일반화·이용권·민감 정보 검토</div><div class="edge">일반화·이용권·민감 정보 검토 → 상위 개선 제안 수신</div><div class="edge">상위 개선 제안 수신 → 조직의 별도 검토·승인</div></div><details><summary>편집용 Mermaid 정의 보기</summary><pre>flowchart TD
+  A[새 템플릿/Harness 릴리스] --&gt; B[차이·데이터·권한·진행 run 영향]
+  B --&gt; C[이전 계획 검토·승인]
+  C --&gt; D[적용·사후 검사·이력]
+  D --&gt; E[프로젝트 실행 사례]
+  E --&gt; F[일반화·이용권·민감 정보 검토]
+  F --&gt; G[상위 개선 제안 수신]
+  G --&gt; H[조직의 별도 검토·승인]
+</pre></details></div>
+<p>총 12개 흐름: 전체 1개, 화면별 8개, 핵심 3개. HTML은 외부 렌더링 서비스 없이 동일 정의를 노드·연결 흐름으로 표시한다. 조건·실패·복귀는 해당 흐름과 예외 설명을 함께 읽는다.</p>
+</article><p class="footer">신규 범위의 기획·상세 설계 문서입니다. 기존 문서는 별도 기준선을 유지합니다. 실제 제품 구현·배포·ALM 지원 검증을 의미하지 않습니다.</p></main></body></html>
